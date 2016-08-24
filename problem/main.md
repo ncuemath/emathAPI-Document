@@ -1,5 +1,5 @@
 ## Problem API
-####Host: emath2.math.ncu.edu.tw
+####Host: api.emath.math.ncu.edu.tw
 
 ### Method Overview
 
