@@ -21,7 +21,7 @@ Get Problem/Answer Image Content :
 
 ####Request
 ```
-POST /problem/single/{grade}/{semester}/{unit}/{difficulty}
+GET /problem/single/{grade}/{semester}/{unit}/{difficulty}
 ```
 
 **Parameters**
@@ -55,7 +55,7 @@ Content-Type: application/json
 
 ####Request
 ```
-POST /problem/multiple/{grade}/{semester}/{unit}/{difficulty}/{num}
+GET /problem/multiple/{grade}/{semester}/{unit}/{difficulty}/{num}
 ```
 
 **Parameters**
@@ -90,7 +90,7 @@ Content-Type: application/json
 ###Get problem/answer image content
 ####Request
 ```
-POST /problem/getContent/{code}
+GET /problem/getContent/{code}
 ```
 
 **Parameters**
