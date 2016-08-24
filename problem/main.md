@@ -70,6 +70,7 @@ GET /problem/multiple/{grade}/{semester}/{unit}/{difficulty}/{num}
 	* 4 : challenge (expert)
 	* 5 - 8 : 1 - 4 random
 * num : problem amount to get
+
 ####Reply
 ```
 Content-Type: application/json
@@ -88,6 +89,7 @@ Content-Type: application/json
 ```
 
 ###Get problem/answer image content
+
 ####Request
 ```
 GET /problem/getContent/{code}
@@ -96,6 +98,7 @@ GET /problem/getContent/{code}
 **Parameters**
 
 * code : problemCode or ansCode
+
 ####Reply
 ```
 Content-Type: image/jpeg
