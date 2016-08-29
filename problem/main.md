@@ -37,6 +37,7 @@ GET /problem/single/{grade}/{semester}/{unit}/{difficulty}
 	* 5 - 8 : 1 - 4 random
 
 ####Reply
+If there is no problem matching the request properties, then it will return status code `404`, else, 
 ```
 Content-Type: application/json
 ```
@@ -73,6 +74,7 @@ GET /problem/multiple/{grade}/{semester}/{unit}/{difficulty}/{num}
 * num : problem amount to get
 
 ####Reply
+If there is no problem matching the request properties, then it will return status code `404`, else, 
 ```
 Content-Type: application/json
 ```
@@ -101,6 +103,7 @@ GET /problem/getContent/{code}
 * code : problemCode or ansCode
 
 ####Reply
+If there is no image matching the request code, then it will return status code `404`, else, 
 ```
 Content-Type: image/jpeg
 ```
