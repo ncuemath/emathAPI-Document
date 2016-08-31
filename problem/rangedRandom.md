@@ -1,30 +1,104 @@
-###Get single Problem in range:
+## Get single or multiple problem in range
 
-####Request
 ```
 GET /problem/random/range/{grade}/{semester}/{unit}/{difficulty}/{num}
 ```
+> Description
+- get random single/multiple problem in range (grade/semester/unit/difficulty)
 
-**Header**
-```
-Authorization: api access token
-```
+###Headers
+<table>
+<tr>
+  <td>Name</td>
+  <td>Required</td>
+  <td>Description</td>
+</tr>
+<tr>
+  <td>Authorization</td>
+  <td>yes</td>
+  <td>api access token</td>
+</tr>
+</table>
 
-**Data**
-* grade : integer [1-6]
-* semester : integer [1-2]
-* unit : integer [1-12]
-* difficulty : integer [1-8]
-	* 1 : easy
-	* 2 : normal
-	* 3 : hard
-	* 4 : challenge (expert)
-	* 5 : all type easy
-	* 6 : all type normal
-	* 7 : all type hard
-	* 8 : all type challenage (expert)
-* num : problem amount to get
-####Reply
+###Parameters
+<table>
+<tr>
+  <td>Name</td>
+  <td>Required</td>
+  <td>Type</td>
+  <td>Description</td>
+</tr>
+<tr>
+  <td>grade</td>
+  <td>yes</td>
+  <td>integer [1-6]</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>semester</td>
+  <td>yes</td>
+  <td>integer [1-2]</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>unit</td>
+  <td>yes</td>
+  <td>integer [1-12]</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>difficulty</td>
+  <td>yes</td>
+  <td>integer [1-8]</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>num</td>
+  <td>yes</td>
+  <td>integer</td>
+  <td>problem amount to get</td>
+</tr>
+</table>
+####Difficulty Table
+<table>
+<tr>
+  <td>value</td>
+  <td>Difficulty</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>easy</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>normal</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>hard</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>challenge (expert)</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>all type easy</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>all type normal</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>all type hard</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>all type challenge (expert)</td>
+</tr>
+</table>
+###Reply
 no Access-Token : `403`  
 wrong Access-Token : `401`  
 no problem matching the request properties: `404`  
