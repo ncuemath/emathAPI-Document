@@ -2,7 +2,7 @@
 ```
 GET /problem/{code}
 ```
-> Description
+###Description
 - Get problem content image 
 
 ###Parameters

@@ -1,7 +1,8 @@
 ##Problem API
-####Protocol: HTTPs
-####Host: api.emath.math.ncu.edu.tw
-####Require: access_token
+```
+Protocol: HTTPs
+Host: api.emath.math.ncu.edu.tw
+```
 If your organization wants to use our api, please contact EMath(子由數學小學堂） @ Department of Mathematics, NCU.
 
 > Method Overview
