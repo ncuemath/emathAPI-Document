@@ -1,11 +1,13 @@
-##Get problem/answer image content
+## Get problem/answer image content
+
 ```
 GET /problem/{code}
 ```
-###Description
+
+### Description
 - Get problem content image 
 
-###Parameters
+### Parameters
 <table>
 <tr>
   <td>Name</td>
@@ -21,11 +23,11 @@ GET /problem/{code}
 </tr>
 </table>
 
-###Reply
+### Reply
 no image matching the request code: `404`  
 Success: `Content-Type: image/jpeg`  
 
-###Example
+### Example
 **Request Example**
 ```json
 curl https://api.emath.math.ncu.edu.tw/problem/o8o_yi_mi_wa_ka_nai  

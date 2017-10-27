@@ -3,10 +3,11 @@
 ```
 GET /problem/random/range/{grade}/{semester}/{unit}/{difficulty}/{num}
 ```
-###Description
+
+### Description
 - get random single/multiple problem in range (grade/semester/unit/difficulty)
 
-###Headers
+### Headers
 <table>
 <tr>
   <td>Name</td>
@@ -20,7 +21,7 @@ GET /problem/random/range/{grade}/{semester}/{unit}/{difficulty}/{num}
 </tr>
 </table>
 
-###Parameters
+### Parameters
 <table>
 <tr>
   <td>Name</td>
@@ -59,7 +60,8 @@ GET /problem/random/range/{grade}/{semester}/{unit}/{difficulty}/{num}
   <td>problem amount to get</td>
 </tr>
 </table>
-####Difficulty Table
+
+#### Difficulty Table
 <table>
 <tr>
   <td>value</td>
@@ -98,13 +100,15 @@ GET /problem/random/range/{grade}/{semester}/{unit}/{difficulty}/{num}
   <td>all type challenge (expert)</td>
 </tr>
 </table>
-###Reply
+
+### Reply
 no Access-Token : `403`  
 wrong Access-Token : `401`  
 no problem matching the request properties: `404`  
+
 Success: `Content-Type: application/json`  
 
-####Example
+#### Example
 **Request Example**
 ```json
 curl -H "Authorization: nico_nico_ni_love_arrow_shoot" https://api.emath.math.ncu.edu.tw/problem/random/range/1/1/1/1/1

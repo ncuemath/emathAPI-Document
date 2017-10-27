@@ -1,7 +1,7 @@
 ## Get single or multiple random problem by serial
 
 ```
-GET /problem/serial/{serial_number}/{num}
+GET /problem/serial/{serial-number}/{num}
 ```
 
 ### Description
